@@ -30,6 +30,18 @@
       color: #fff;
     }
 
+    .typed-cursor {
+    font-size: 1.2em;
+    color: #00e0ff;
+     animation: blink 0.7s infinite;
+   }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 
     @keyframes orbit {
   0%   { transform: translateX(0) translateY(0); }
@@ -101,7 +113,9 @@
   <section id="hero" class="section text-center text-light bg-dark" style="padding-top:120px;" data-aos="fade-down">
     <div class="container">
       <h1>Bodakunta Rakshitha</h1>
-      <p class="lead"><span id="typed-text">Aspiring Data Analyst | Data Enthusiast | ETL Explorer</span></p>
+      <p class="lead">
+        <span id="typed-text">Aspiring Data Analyst&nbsp;|&nbsp;Data Enthusiast&nbsp;|&nbsp;ETL Explorer</span>
+      </p>
       <div>
         <a href="23RH1A6745@Mrecw.edu.in" class="text-info me-3">Email</a>
         <a href="https://www.linkedin.com/in/bodakunta-rakshitha-a63b952b7/" class="text-info me-3">LinkedIn</a>
@@ -148,11 +162,10 @@ I'm working toward becoming a well-rounded Data Analyst, and I’m always open t
   <h2 class="mb-4">My Skills</h2>
   <div class="d-flex justify-content-center flex-wrap">
     <div class="skill-card">Python</div>
-    <div class="skill-card">MongoDB</div>
-    <div class="skill-card">FastAPI</div>
-    <div class="skill-card">Streamlit</div>
-    <div class="skill-card">LightGBM</div>
-    <div class="skill-card">LangChain</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">PowerBI</div>
+    <div class="skill-card">MLOps</div>
+    <div class="skill-card">RAG</div>
   </div>
 </section>
 
@@ -295,7 +308,7 @@ I'm working toward becoming a well-rounded Data Analyst, and I’m always open t
       <p><strong>Email:</strong> <a href="23RH1A6745@Mrecw.edu.in" class="text-info">23RH1A6745@Mrecw.edu.in</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bodakunta-rakshitha-a63b952b7/" class="text-info">https://www.linkedin.com/in/bodakunta-rakshitha-a63b952b7/</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/Marathon-here" class="text-info">https://github.com/Marathon-here</a></p>
-      <a href="Rakshitha_Resume.pdf" class="btn btn-custom mt-3">Download Resume</a>
+      <a href="./assets/resume--.pdf" class="btn btn-custom mt-3">Download Resume</a>
     </div>
   </section>
 
@@ -311,6 +324,24 @@ I'm working toward becoming a well-rounded Data Analyst, and I’m always open t
   <script>
     AOS.init();
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: [
+      "Aspiring Data Analyst",
+      "Data Enthusiast",
+      "ETL Explorer"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1200,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+</script>
+
 
 </body>
 </html>
